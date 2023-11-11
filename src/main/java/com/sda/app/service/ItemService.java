@@ -31,7 +31,7 @@ public class ItemService {
     public Item updateItem(Item item){
         return itemRepository.save(item);
     }
-    public void deleteItem(Item item){
-        itemRepository.delete(item);
+    public void deleteItem(Integer id){
+        itemRepository.deleteById(id);
     }
 }
